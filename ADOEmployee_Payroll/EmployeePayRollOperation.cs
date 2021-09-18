@@ -47,6 +47,24 @@ namespace ADOEmployee_Payroll
             sqlConnection.Close();
             return EmpList;
         }
+        public void Display()
+        {
+            foreach (var item in EmpList)
+            {
+                Console.WriteLine("ID is : " + item.ID);
+                Console.WriteLine("Name is : " + item.Name);
+                Console.WriteLine("StartDate is : " + item.StartDate);
+                Console.WriteLine("Gender is : " + item.Gender);
+                Console.WriteLine("EmployeeDepartment is : " + item.EmployeeDepartment);
+                Console.WriteLine("EmployeePhoneNumber is : " + item.EmployeePhoneNumber);
+                Console.WriteLine("BasicPay is : " + item.BasicPay);
+                Console.WriteLine("Deduction is : " + item.Deduction);
+                Console.WriteLine("TaxablePay is : " + item.TaxabalePay);
+                Console.WriteLine("IncomeTax is : " + item.IncomeTax);
+                Console.WriteLine("NetPay is : " + item.NetPay);
+                Console.WriteLine("----------End of Record of an Employee---------------------");
+            }
+        }
 
     }
 }

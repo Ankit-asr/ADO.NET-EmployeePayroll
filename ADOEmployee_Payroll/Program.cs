@@ -9,6 +9,8 @@ namespace ADOEmployee_Payroll
             Console.WriteLine("Welcome To ADO.NET Employee Payroll Service");
             EmployeePayRollOperation emp = new EmployeePayRollOperation();
             emp.GetAllEmployeeDetails();
+            emp.Display();
+
         }
     }
 }
